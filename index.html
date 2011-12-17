@@ -5,14 +5,14 @@
 <script type="text/javascript" src="js.js"></script>
 <script type="text/javascript" src="jq.js"></script>
 <link href="layout.css" rel="stylesheet" type="text/css">
+<title>SoundCloud Instant</title>
 </head>
 <body>
-<div id="player">
-  <div>
-  <h2>Welcome to Soundcloud Instant!</h2>
-  <h4>Start typing to start.</h4></div>
-  <a class="btn primary">Play</a>
-  <img src='loading.png'>
+<div id="topbar">
+  <ul>
+  <li><a class="btn primary">Play</a></li>
+  <li><h2>Welcome to Soundcloud Instant!</h2></li>
+  <li><h4>Start typing to start.</h4></li></ul>
   </div>
 <div id="head">
   <img src="cloud_bolt.png">
@@ -24,7 +24,8 @@
   <input type="hidden" name="client_id" value="3191b63184cbb88d54a36d1e6afc3a00">
   <input type="hidden" name="order" value="hotness">
   </form>
-  <img src='loading.png'>
   <div id="results">
   </div>
   </div>
+<div id="footer">
+  <p>Made by Hank Stoever. Find me on <a href="twitter.com/hstove">Twitter</a> and <a href="github.com/hstove">Github</a></p>

@@ -8,10 +8,11 @@ $(document).ready(function(){
       dataType: 'json',
       beforeSend: 
         function(data){
-          $("#container img").show();
+          $('#results').html('')
         },
       success:
         function(data){
+          $('#results').html('')
           var items = [];
           $.each(data, function(key, val){
             items.push("<div id='trackbox'><h2><a data-artist='"+val.user.username+"' data-url=" + val.stream_url + " href='#'>"+val.title+"</a></h2>\
@@ -24,10 +25,7 @@ $(document).ready(function(){
         }
     });
     $('.btn').click(function(){
-      var current = $(this).html;
-      if (current === 'Play'){
-        $(this).html('pause');
-      };
+      playPause();
     });
   });
   $("#search").submit(function(){
@@ -56,8 +54,8 @@ function getReady(){
     var url= $(this).attr('data-url') +"?"+ clientid;
     var title= $(this).html();
     var artist = $(this).attr('data-artist');
-    $('#player h2').html(title);
-    $('#player h4').html(artist);
+    $('#topbar h2').html(title);
+    $('#topbar h4').html(artist);
     changeSrc(url);
     return false;
   });
@@ -67,10 +65,19 @@ function changeSrc(url){
   var audioPlayer = document.getElementsByTagName('audio')[0];
   audioPlayer.src = url;
   audioPlayer.load();
-  audioPlayer.play();
-  $('.btn').html('pause')
+  playPause();
 }
 
-function playPause
+function playPause(){
+  var audioPlayer = document.getElementsByTagName('audio')[0];
+  if (audioPlayer.paused) {
+          audioPlayer.play();
+          $('.btn').html('Pause');
+  } else {
+          audioPlayer.pause();
+          $('.btn').html('Play');
+  }
+}
+
 
 
