@@ -1,0 +1,49 @@
+#head {
+  width: 100%;
+}
+
+#head img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 20%;
+}
+
+#container {
+  position: relative;
+  left: 10%;
+  width: 80%;
+  text-align: center;
+  border: 1px solid black;
+}
+
+#container input {
+  width: 200px;
+  height: 20px;
+}
+
+#trackbox {
+  width: 100%;
+  text-align: left;
+  line-height: 20px;
+  border-bottom: 1px solid black;
+}
+
+#trackbox h2 {
+  float: left;
+  margin: 5px;
+}
+
+#trackbox span {
+  float:right;
+  margin: 5px;
+}
+
+#trackbox h4 {
+  margin: 25px 5px 10px 5px ;
+}
+
+
+
+
+
