@@ -3,6 +3,7 @@
 $.template("track", "<div id='trackbox'><a data-url='${stream_url}' href='#'>${title}</a>");
 
 $(document).ready(function(){
+  loadPlayer();
   $("#container img").hide();
   $('#q').keyup(function(){
     $.ajax({
@@ -80,6 +81,11 @@ function playPause(){
           $('.btn').html('Play');
   }
 }
+
+function loadPlayer() {
+        var audioPlayer = new Audio();
+        document.getElementById('head').appendChild(audioPlayer);
+      }
 
 
 
