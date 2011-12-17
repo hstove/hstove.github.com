@@ -26,8 +26,10 @@ body {
 }
 
 #container input {
-  width: 200px;
-  height: 20px;
+  width: 250px;
+  height: 30px;
+  font-size: 16px;
+  padding: 5px;
 }
 
 #trackbox {
@@ -35,6 +37,21 @@ body {
   text-align: left;
   line-height: 20px;
   border-bottom: 1px solid black;
+  font-family: 'helvetica neue';
+}
+
+#trackbox:hover {
+  background-color: rgba(201,201,201,.3);
+}
+
+#trackbox a{
+  color: black;
+  text-decoration:none;
+}
+
+#trackbox a:visited {
+  color: black;
+  opacity: .8;
 }
 
 #trackbox h2 {
@@ -49,6 +66,15 @@ body {
 
 #trackbox h4 {
   margin: 25px 5px 10px 5px ;
+  opacity: .7;
+  font-weight: 300;
+}
+
+#player {
+  position: absolute;
+  width: 20%;
+  height: 100px;
+  border: 1px solid black;
 }
 
 
