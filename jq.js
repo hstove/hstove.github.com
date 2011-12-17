@@ -1,3 +1,5 @@
+// JavaScript Document
+
 $.template("track", "<div id='trackbox'><a data-url='${stream_url}' href='#'>${title}</a>");
 
 $(document).ready(function(){
