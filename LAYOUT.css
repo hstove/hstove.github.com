@@ -1,3 +1,6 @@
+body {
+  background-image: url('goovepaper.png');
+}
 #head {
   width: 100%;
 }
@@ -13,8 +16,13 @@
   position: relative;
   left: 10%;
   width: 80%;
+  padding: 5px;
   text-align: center;
-  border: 1px solid black;
+  border: 3px solid #715414;
+  background-color: rgba(100,100,100,.5);
+  opacity: 1;
+  min-height: 400px;
+  border-radius: 5px;
 }
 
 #container input {
@@ -36,7 +44,7 @@
 
 #trackbox span {
   float:right;
-  margin: 5px;
+  margin: 5px 10px;
 }
 
 #trackbox h4 {
